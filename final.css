@@ -1,0 +1,219 @@
+    #big-div {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+/* Header-Container*/
+    #header-div {
+        background-color: rgb(58, 57, 57);
+        padding: 3px;
+        border: 1px solid lightgray;
+        border-radius: 25px;
+        margin: 25px;
+        /* margin-left: 20%;
+        margin-right: 20%; */
+        /* width: 50%; */
+        text-align: center;
+    }
+
+
+/* Header-Text */
+    header {
+        color: lightgray    ;
+    }
+
+/* Sort buttons */
+    #sort {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-left: 25px;
+    }
+
+    .btn-sort {
+        flex: 1;
+        padding: 15px 1 1;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        font-size: 1.8cap;
+        
+    }
+
+    .btn-sort:hover {
+        cursor: pointer;
+        transition: transform 0.1s, opacity 0.2s;
+        opacity: 0.85;
+    }
+
+/* Input items */
+    .input-item {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        
+    }
+
+
+    #to-do-input {
+        flex: 1;
+        margin-left: 25px;
+        /* margin-top: 25px;
+        margin-bottom: 25px; */
+        padding: 20px;
+        width: 70%;
+        height: 10px;
+        border-radius: 8px;
+        font-size: 2cap;
+    }
+
+
+    #addBtn, #clearBtn {
+        padding: 12px;
+        font-size: 2cap;
+        background-color: rgb(58, 57, 57);
+        color: lightgray;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+
+    #clearBtn {
+        margin-right: 25px;
+    }
+
+    #addBtn:hover, #clearBtn:hover {
+        cursor: pointer;
+        transition: transform 0.1s, opacity 0.2s;
+        opacity: 0.85;
+    }
+
+
+    /* Stats bar */
+    .stats-bar {
+        font-size: 0.85rem;
+        color: lightgray;
+        padding: 6px 4px;
+        margin-bottom: 12px;
+        margin: 25px;
+    }
+
+    /*  */
+    .empty-state {
+        color: lightgray;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    /* To-Do Card */
+    .done {
+        text-decoration: line-through;
+        opacity: 0.6;
+        
+    }
+    .toDo-card {
+        background: white;
+        border-radius: 10px;
+        padding: 12px 16px;
+        margin-bottom: 12px;
+        margin-left: 25px;
+        margin-right: 25px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+        border-left: 4px solid rgb(58, 57, 57);
+        animation: fadeIn 0.25s ease;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .toDo-text {
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+
+    .toDo-card input[type="checkbox"] {
+        transform: scale(1.7);
+    }
+
+    .toDo-card button {
+        margin-left: 6px;
+        font-size: 1.5rem;
+        padding: 8px;
+        white-space: nowrap;
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .toDo-content { 
+        flex: 1; 
+    }
+
+    .toDo-text { 
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.5;
+        color: #2d3748;
+    }
+
+    .toDo-date { 
+        font-size: 0.78rem; 
+        color: #a0aec0; 
+        margin-top: 6px; 
+    }
+
+    .edit-input {
+    width: 100%;
+    padding: 6px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+
+
+
+/*-------------------------*/
+    /* MOBILE FORMAT */
+
+    @media (max-width: 876px) {
+
+        #big-div {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+    @media (max-width: 550px) {
+
+        .input-item {
+            flex-direction: column;
+        }
+
+        #to-do-input {
+            margin-right: 25px;
+        } 
+
+        .btn-row {
+            margin-top: 10px;
+        }
+
+        #addBtn {
+            margin-left: 25px;
+        }
+
+
+
+            /* input {
+        flex: 1
+    }
+    
+        .btn-row {
+            flex: 1;
+            gap: 1px;
+
+        } */
+    }
